@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="/css/style.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Calligraffitti&family=Comfortaa:wght@300;400;500;600;700&family=Dancing+Script&family=Montserrat:wght@400;700&family=Mynerve&family=Nunito&family=Open+Sans:wght@400;600&family=Playfair+Display:wght@400;500;600;700;800;900&family=Poppins:wght@100;300&family=Roboto&display=swap" rel="stylesheet">
+		<title>Forms_2</title>
+	</head>
+	<body>
+		<div class="container">
+			<h1>Форма реєстрації</h1>
+			<form id="registration-form">
+				<div class="form_group">
+					<label for="login">Логін:</label>
+					<input type="text">
+				</div>
+				<div class="form_group">
+					<label for="password">Пароль:</label>
+					<div class="password_container">
+						<input type="password">
+					</div>
+				</div>
+				<div class="form_group">
+					<label for="confirm-password">Підтвердження паролю:</label>
+					<div class="password_container">
+						<input type="password">
+					</div>
+				</div>
+				<div class="form_group">
+					<label for="email">Електронна пошта:</label>
+					<input type="email">
+				</div>
+				<div class="form_group">
+					<label for="full-name">Повне ім'я:</label>
+					<input type="text">
+				</div>
+				<div class="form_group">
+					<label for="captcha">Код з капчі:</label>
+					<div class="captcha_container">
+						<input type="text" id="captcha">
+						<img src="/img/captcha.png" alt="Капча" id="captcha-image">
+					</div>
+				</div>
+				<button type="button" id="clear_btn">Очистити</button>
+				<button type="submit">Відправити</button>
+			</form>
+		</div>
+		<script src="script.js"></script>
+	</body>
+</html>
